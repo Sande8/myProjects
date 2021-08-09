@@ -1,0 +1,42 @@
+﻿<Window x:Class="SecondWPFApplication.Addtenant"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SecondWPFApplication"
+        mc:Ignorable="d"
+        Title="Pulchritudinous property system" FontSize="14" Background="#04c582" Height="580" Width="350">
+    <Border CornerRadius="20" Background="#545d6a" Margin="20">
+        <StackPanel Margin="20">
+            <Label Content="Add New Tenant" FontSize="25" FontWeight="Bold" HorizontalAlignment="Center" Foreground="White"/>
+            <Separator></Separator>
+            <Label Content="ID Number" Foreground="White"/>
+            <TextBox x:Name="txtTenIDNum" Background="#545d6a" Foreground="White" FontSize="18" />
+            <Label Content="Name" Foreground="White"/>
+            <TextBox x:Name="txtTenName" Background="#545d6a" Foreground="White" FontSize="18" />
+            <Label Content="Surname" Foreground="White"/>
+            <TextBox x:Name="txtTenSurname" Background="#545d6a" Foreground="White" FontSize="18" />
+            <Label Content="Phone Number" Foreground="White"/>
+            <TextBox x:Name="txtTenPhone" Background="#545d6a" Foreground="White" FontSize="18" />
+            <Label Content="Home Address" Foreground="White"/>
+            <TextBox x:Name="txtTenAddress" Background="#545d6a" Foreground="White" FontSize="18" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <RadioButton Foreground="White" Grid.Column="0"  x:Name = "rb1" Content = "Male"
+                  GroupName = "Gender" Width = "69"/>
+
+                <RadioButton Foreground="White" Grid.Column="1" x:Name = "rb2" Content = "Female" 
+                        GroupName = "Gender" Width = "81" />
+            </Grid>
+            <Label Content="Room Number" Foreground="White"/>
+            <TextBox x:Name="txtTenRoomNumb" Background="#545d6a" Foreground="White" FontSize="18" />
+            
+            <Button x:Name="btnAddTenant" Content="Submit" Margin="60 20 60 20" Background="#545d6a" Foreground="White" FontSize="18" Click="btnAddTenant_Click" />
+            
+        </StackPanel>
+    </Border>
+   
+</Window>

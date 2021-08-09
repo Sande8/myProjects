@@ -1,0 +1,39 @@
+﻿<Window x:Class="SecondWPFApplication.Landingpage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SecondWPFApplication"
+        mc:Ignorable="d"
+        Title="Pulchritudinous property system" Background="#04d582" Height="450" Width="800">
+    <Border Background="#04c582" Margin="20">
+        <StackPanel  Margin="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Content="Pulchritudinous Property" FontWeight="Bold" Foreground="White" FontSize="25" />
+                <Button Margin="5 0 5 0" Background="#04c582" Grid.Column="1" Content="Home" FontWeight="Bold" FontSize="20" BorderBrush="Blue" Foreground="#4040DE"/>
+                <Button Margin="5 0 5 0" Background="#04c582" Grid.Column="2" Content="Contact IT" FontWeight="Bold" FontSize="20" BorderBrush="Blue" Foreground="#4040DE"/>
+            </Grid>
+            <Separator></Separator>
+
+            <Grid Background="White">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="1" Source="C:\Users\user\Downloads\logo1.png"  Name="ImageViewer1" Height="250" Width="250" Margin="0 20 0 20"/>
+                <StackPanel Grid.Column="0" Margin="0 20 0 20">
+                    <Label Content="What we offer" Margin="20 70 20 0" FontSize="20" FontWeight="Bold"/>
+                    <TextBlock TextWrapping="Wrap" FontSize="16" Text="We offer a blend of eastern and western hospitality in an atmosphere of timeliness elagance, beyond comfortable and stylish rooms" Margin="20 0 20 20"/>
+                    <Button HorizontalAlignment="Center" Width="100" Height="30" Background="#4040DE" Content="Login" FontWeight="Bold" Foreground="White" Click="Button_Click"/>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </Border>
+</Window>
